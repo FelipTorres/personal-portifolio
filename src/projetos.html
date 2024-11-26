@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio pessoal de Felipe Torres">
+    <title>Portfólio Felipe Torres</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/projetos.js"></script>
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Felipe Torres</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="projetos.html">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="flex-grow-1">
+    <section class="py-5 text-center">
+        <div class="container">
+            <h1 class="fw-bold text-uppercase">Meus Projetos</h1>
+            <p class="lead">Aqui estão alguns dos projetos nos quais trabalhei, destacando minha experiência e habilidades no desenvolvimento de soluções.</p>
+        </div>
+    </section>
+
+    <section class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <img src="img/projeto1.jpeg" class="card-img-top img-fluid project-image" alt="Projeto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">CRUD Produtos e Categorias</h5>
+                            <p class="card-text project-description">
+                                Foi implementado um mini sistema onde é possível realizar cadastros de categorias e de produtos, onde cada produtos se adequa a um tipo de categoria, e uma categoria pode se adequar a vários tipos de produtos.
+                            </p>
+                            <p class="card-text project-technologies d-none">
+                                <b>Tecnologias utilizadas: </b> PHP, Laravel, HTML, Bootstrap
+                            </p>
+                            <a href="https://github.com/FelipTorres/ProjetoLaravel" target="_blank" class="btn btn-primary mt-3">
+                                Ver Projeto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <img src="img/projeto2.jpeg" class="card-img-top img-fluid project-image" alt="Projeto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Gerenciamento de garagem</h5>
+                            <p class="card-text project-description">
+                                Sistema criado para cadastrar e controlar o fluxo de uma garagem pública de veículos. Contém tabelas com dados do cliente e seu respectivo veículo. Um veículo só pode pertencer a um cliente. Mas um cliente pode ter vários veículos.
+                            </p>
+                            <p class="card-text project-technologies d-none">
+                                <b>Tecnologias utilizadas: </b> JavaScript, Node.js
+                            </p>
+                            <a href="https://github.com/FelipTorres/Garage-Control" target="_blank" class="btn btn-primary mt-3">
+                                Ver Projeto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                    <img src="img/projeto3.jpeg" class="card-img-top img-fluid project-image" alt="Projeto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Livraria</h5>
+                            <p class="card-text project-description">
+                                API para gerenciar um CRUD de livros em uma biblioteca. Permite cadastrar, consultar, atualizar e excluir livros com informações como título, autor, ISBN e ano de publicação. Cada livro é único, mas um autor pode ter vários livros registrados.
+                            </p>
+                            <p class="card-text project-technologies d-none">
+                                <b>Tecnologias utilizadas: </b> JavaScript, Node.js
+                            </p>
+                            <a href="https://github.com/FelipTorres/Library" target="_blank" class="btn btn-primary mt-3">
+                                Ver Projeto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>Siga-me:
+            <a href="https://www.linkedin.com/in/felipe-torres-dev/" class="text-white">LinkedIn</a> |
+            <a href="https://github.com/FelipTorres" class="text-white">GitHub</a>
+        </p>
+        <p>&copy; 2024 Felipe Torres.</p>
+    </div>
+</footer>
+
+</body>
+</html>

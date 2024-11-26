@@ -1,0 +1,14 @@
+.skills-list li {
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skills-list li:hover {
+    background-color: #9f9c9c;
+    color: white;
+    cursor: pointer;
+}

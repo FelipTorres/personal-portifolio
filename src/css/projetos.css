@@ -1,0 +1,15 @@
+.project-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+.project-img {
+    height: 200px;
+    object-fit: cover;
+}
+.project-description, .project-technologies {
+    transition: opacity 0.3s ease;
+}
