@@ -43,14 +43,18 @@ $(document).ready(function() {
 
             const data = { name: nameValue, email: emailValue, message: messageValue };
 
+            localStorage.setItem('formData', JSON.stringify(data));
+
+            const storedData = JSON.parse(localStorage.getItem('formData'));
+
             $('#show-data').html(`
                 <div class="alert alert-success" role="alert">
                     Mensagem enviada com sucesso!
-                </div>
-                <p><strong>Nome:</strong> ${data.name}</p>
-                <p><strong>E-mail:</strong> ${data.email}</p>
-                <p><strong>Mensagem:</strong> ${data.message}</p>
-            `);
+                </div>  
+                <p><strong>Nome:</strong> ${storedData.name}</p>
+                <p><strong>E-mail:</strong> ${storedData.email}</p>
+                <p><strong>Mensagem:</strong> ${storedData.message}</p>
+                `);
 
             name.val('');
             email.val('');
